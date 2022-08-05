@@ -1,0 +1,40 @@
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+body {
+
+    max-width: 500px !important;
+    margin: auto !important;
+    background-color: black;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+
+.rectangle {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    width:80%;
+    height: 100%;
+    background-color: silver;
+    border:transparent;
+    border-radius: 15px;
+    position: center;
+    margin-top: 80% !important;
+    margin: auto;
+
+}
+
+.doonserviceFound {
+
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+.serviceFound {
+
+    font-size: 20px;
+    text-align: center;
+
+}

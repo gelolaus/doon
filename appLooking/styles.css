@@ -1,0 +1,67 @@
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+body {
+
+    max-width: 500px !important;
+    margin: auto !important;
+    background-color: black;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+
+.rectangle {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    width:80%;
+    height: 100%;
+    background-color: silver;
+    border:transparent;
+    border-radius: 15px;
+    position: center;
+    margin-top: 80% !important;
+    margin: auto;
+
+}
+
+.doonLooking {
+
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+.lookingForARide {
+
+    font-size: 20px;
+    text-align: center;
+
+}
+
+#cancelButton {
+
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+input[type=button] {
+    
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    width: 90%;
+    background-color: rgb(243, 73, 73);
+    color: black;
+    padding: 14px 25px;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}

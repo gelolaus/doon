@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>doon | Booking</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="index.js"></script>
+
+</head>
+
+<body>
+
+    <div class="rectangle">
+
+        <div class="doonBooking">
+
+            <div class="bookingHeader">
+                <div class="bookingRectangle">
+
+                    <p><strong>Book a ride</strong></p>
+
+                </div>
+            </div>
+
+            <div id="loginForm">
+
+                <form action="../appServicePicker/index.html" method="POST">
+
+                    <label for="whereFrom">Where from?</label><br>
+                    <select name="whereFrom" id="whereFrom">
+                      <option value="Asia Pacific College">Asia Pacific College</option>
+                      <option value="De La Salle University - Dasmarinas">De La Salle University - Dasmarinas</option>
+                      <option value="Adamson University">Adamson University</option>
+                    </select>
+
+                    <label for="whereTo">Where to?</label><br>
+                    <select name="whereTo" id="whereTo">
+                      <option value="Asia Pacific College">Asia Pacific College</option>
+                      <option value="De La Salle University - Dasmarinas">De La Salle University - Dasmarinas</option>
+                      <option value="Adamson University">Adamson University</option>
+                    </select>
+
+                    <div class="mapouter">
+                    
+                        <div class="gmap_canvas">
+
+                            <iframe title="gmap_api" width="250" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=Asia%20Pacific%20College&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    
+                        </div>
+    
+                    </div>
+
+                    <div class="vehicleType">
+
+                        <label class="labl1">
+
+                            <input type="radio" name="radioname" value="one_value" checked="checked"/>
+                            <div>Sedan</div>
+                            
+                        </label>
+
+                        <label class="labl2">
+
+                            <input type="radio" name="radioname" value="another" />
+                            <div>SUV</div>
+                            
+                        </label>
+
+                    <br>
+
+                    </div>
+
+                    <input type="submit" value="Submit" onclick="handleSubmit()"/>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

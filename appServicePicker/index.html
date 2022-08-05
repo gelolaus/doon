@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>doon | Booking</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="result.js"></script>
+    
+
+</head>
+
+<body>
+
+    <div class="rectangle">
+
+        <div class="doonServicePicker">
+
+            <div class="servicePickerHeader">
+
+                <div class="servicePickerRectangle">
+
+                    <p><strong>Choose your Service!</strong></p>
+
+                </div>
+
+            </div>
+
+
+            <div class="generateServices">
+
+                <form action="../appLooking/index.html" method="POST">
+
+                    <p type="text" id="whereFrom">📍 From: <span id="result-whereFrom" /></p>
+                    <p type="text" id="whereTo">📍 To: <span id="result-whereTo" /></</p>
+
+                    <div class="serviceProvidersList">
+
+                        <label for="serviceProvider"><strong>Choose your Service Provider</strong></label><br>
+                        <select name="serviceProvider" id="serviceProvider">
+                          <option value="OWTO">OWTO</option>
+                          <option value="Grab">Grab</option>
+                        </select>
+                        
+                        <p><strong>OWTO:</strong> <span id="priceOWTO"/></p>
+                        <p><strong>Grab:</strong> <span id="priceGRAB"/></p>
+
+						<script>
+                      
+                      			let priceOWTO = Math.floor((Math.random() * 300) + 100);
+
+                      				document.getElementById("priceOWTO").innerHTML = priceOWTO + " PhP";
+                    
+                  				let priceGRAB = Math.floor((Math.random() * 300) + 100);
+
+                    				document.getElementById("priceGRAB").innerHTML = priceGRAB + " PhP";
+                        
+                      	</script>
+                        
+
+                    </div>
+
+                    <input type="submit" value="Select Service">
+        
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>

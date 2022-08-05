@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>doon | Booking</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="doonserviceFound">
+
+        <div class="rectangle">
+
+            <div class="serviceFound">
+
+                <p>Service Found!</p>
+                
+                <br/>
+                
+                <p>Plate Number: <strong><span id="plateNumber" /></strong></p>
+                <script>
+                
+                var myArray = [
+                	  "VIP 001",
+                	  "XYZ 239",
+                	  "LOL 193",
+                	  "TRY 300",
+                	  "APC 213",
+                	  "ANC 999"
+                	];
+
+                var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+                
+                let plateNumber = randomItem;
+
+                document.getElementById("plateNumber").innerHTML = plateNumber;
+                
+                </script>
+                
+                                <p>Driver Name: <strong><span id="driverName" /></strong></p>
+                <script>
+                
+                var myArray = [
+                	  "Joaqs Dotcom",
+                	  "Jwaine Firenation",
+                	  "Carl Byers",
+                	  "Gelo Wings",
+                	  
+                	  
+                	];
+
+                var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+                
+                let driverName = randomItem;
+
+                document.getElementById("driverName").innerHTML = driverName;
+                
+                </script>
+
+            </div>
+
+            <div class="generateServiceFound">
+            
+                <script>
+
+        setTimeout(function () {
+        window.location.href= '../appHome/index.html'; // the redirect goes here
+
+        },10000);
+
+    </script>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

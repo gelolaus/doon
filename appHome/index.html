@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>doon | Home</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body onload="startTime()">
+
+    <div class="rectangle">
+
+        <div class="doonHome">
+
+            <div class="welcomeHeader">
+                <div class="welcomeRectangle">
+
+                    <div class="dropdown">
+
+                        <button class="dropbtn">Welcome, <strong>user!</strong></button>
+
+                            <div class="dropdown-content">
+
+                                <a href="../appLogin/index.html">Logout</a>
+
+                            </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="dateAndTime">
+
+                <p><strong><span id="date"></span></strong></br><div id="time"></div></p>
+
+                <script>
+
+                    var dt = new Date();
+                    document.getElementById("date").innerHTML = dt.toLocaleDateString();
+
+
+                    function startTime() {
+                        const today = new Date();
+                        let h = today.getHours();
+                        let m = today.getMinutes();
+                        let s = today.getSeconds();
+                        m = checkTime(m);
+                        s = checkTime(s);
+                        document.getElementById('time').innerHTML =  h + ":" + m + ":" + s;
+                        setTimeout(startTime, 1000);
+                    }
+
+                    function checkTime(i) {
+                    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                    return i;
+                    }
+
+                </script>
+
+            </div>
+
+            <div class="twoButtonsContainer">
+
+
+                    <div class="historyButton">
+                        
+                        <a href="../appHistory/index.html">
+                        <img id="historyButton" src="historyButton.png" alt="HISTORY">
+                        <p><strong>HISTORY</strong></p>
+                        </a>
+
+                    </div>
+
+                <div class="paymentButton">
+
+                    <img id="paymentButton" src="paymentButton.png" alt="PAYMENT">
+                    <p><strong>PAYMENT</strong></p>
+
+                </div>
+
+            </div>
+
+                <div class="mapouter">
+                    
+                    <div class="gmap_canvas">
+                        
+                        <iframe title="gmap_api" width="250" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=Asia%20Pacific%20College&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+                    </div>
+
+                </div>
+
+            <a href="../appBooking/index.html">
+            <div class="bookButton">
+
+                <p><strong>Book a ride!</strong></p>
+
+            </div>
+            </a>
+        
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

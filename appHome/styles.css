@@ -1,0 +1,220 @@
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+body {
+
+    max-width: 500px !important;
+    margin-top: 30px !important;
+    margin: auto;
+    background-color: rgb(245, 243, 240);
+
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* selected link */
+  a:active {
+    color: black;
+    text-decoration: none;
+  }
+
+.rectangle {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    width:80%;
+    height: 100%;
+    background-color: rgba(124,124,124,0.1);
+    border:transparent;
+    border-radius: 15px;
+    position: center;
+    margin: auto;
+
+}
+
+.doonHome {
+
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+.welcomeHeader {
+
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background: transparent;
+    background-color: transparent;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: transparent;}
+
+.welcomeRectangle {
+
+    padding: 8px;
+    width:90%;
+    height: 100%;
+    background-color: rgba(124,124,124,0.2);
+    border:transparent;
+    border-radius: 15px;
+    position: center;
+    margin: auto;
+
+}
+
+.dateAndTime {
+
+    margin-top: 30px;
+    margin-bottom:30px;
+    text-align: center;
+
+}
+
+.twoButtonsContainer {
+
+
+    display: flex;
+    margin: auto;
+    margin-bottom: 30px;
+
+}
+
+.historyButton {
+
+    text-align: center;
+
+    display: inline-block;
+    padding: 8px;
+    width:30%;
+    height: 30%;
+    background-color:#fbdf73;
+    border:transparent;
+    border-radius: 15px;
+    position: center;
+    margin: auto;
+
+}
+
+.paymentButton {
+
+    text-align: center;
+
+    display: inline-block;
+    padding: 8px;
+    width:30%;
+    height: 30%;
+    background-color:#fbdf73;
+    border:transparent;
+    border-radius: 15px;
+    position: center;
+    margin: auto;
+
+}
+
+img#historyButton {
+
+    display: block;
+    margin: auto;
+    max-width: 35%;
+
+}
+
+img#paymentButton {
+
+    display: block;
+    margin: auto;
+    max-width: 35%;
+
+}
+
+.mapouter {
+    margin-top: 10px !important;
+    margin:auto;
+    position:center;
+    text-align:center;
+    height:250px;
+    width:250px;
+    position:center;
+
+}
+
+.gmap_canvas {
+    margin-top: 10px !important;
+    margin:auto;
+    overflow:hidden;
+    background:none!important;
+    height:250px;
+    width:250px;
+    position:center;
+    border-radius: 10px;
+
+}
+
+.bookButton {
+
+    text-align: center;
+
+    padding: 8px;
+    width:80%;
+    height: 30%;
+    background-color:#fbdf73;
+    border:transparent;
+    border-radius: 15px;
+    position: center;
+    margin-top: 40px !important;
+    margin: auto;
+
+}

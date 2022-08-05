@@ -1,0 +1,27 @@
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+body {
+
+    max-width: 500px !important;
+    margin: auto !important;
+    background-color: rgb(245, 243, 240);
+
+}
+
+img#doonLogo {
+
+    display: block;
+    margin-top: 50% !important;
+    margin: auto;
+    width: 65%;
+
+}
+
+p {
+	
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	margin-top: 80%;
+	
+}
