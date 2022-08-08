@@ -16,3 +16,11 @@ window.addEventListener('load', () => {
     document.getElementById('result-whereTo').innerHTML = whereTo;
 
 })
+
+function handleSubmit () {
+    const serviceProvider = document.getElementById('serviceProvider').value;
+    
+    sessionStorage.setItem("SERVICEPROVIDER", serviceProvider);
+
+    return;
+}
