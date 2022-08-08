@@ -59,23 +59,81 @@
 
                         <label for="serviceProvider"><strong>Choose your Service Provider</strong></label><br>
                         <select name="serviceProvider" id="serviceProvider">
-                          <option value="OWTO">OWTO</option>
-                          <option value="Grab">Grab</option>
+                          <option value="OTSO">OTSO</option>
+                          <option value="Grabbed">Grabbed</option>
+                          <option value="MaxiCars">Maxicars</option>
                         </select>
                         
-                        <p><strong>OWTO:</strong> <span id="price1"/></p>
-                        <p><strong>Grab:</strong> <span id="price2"/></p>
+                        <p><strong>OTSO:</strong> <span id="price1"/></p>
+                        <p><strong>Grabbed:</strong> <span id="price2"/></p>
+                        <p><strong>MaxiCars:</strong> <span id="price3"</p>
                         <p><strong></strong></p>
 
 						<script>
+
+                            function price1(min = 50, max = 150) {
+
+                                // find diff
+                                let difference = max - min;
+
+                                // generate random number 
+                                let rand = Math.random();
+
+                                // multiply with difference 
+                                rand = Math.floor( rand * difference);
+
+                                // add with min value 
+                                rand = rand + min;
+
+                                return rand;
+                                
+                            }
                       
-                      			let priceOWTO = Math.floor((Math.random() * 300) + 100);
+                            // let priceOWTO = Math.floor((Math.random() * 300) + 100);
 
-                      				document.getElementById("price1").innerHTML = priceOWTO + " PhP";
-                    
-                  				let priceGRAB = Math.floor((Math.random() * 300) + 100);
+                            document.getElementById("price1").innerHTML = price1 + " PhP";
 
-                    				document.getElementById("price2").innerHTML = priceGRAB + " PhP";
+                            function price1(min = 75, max = 225) {
+
+                                // find diff
+                                let difference = max - min;
+
+                                // generate random number 
+                                let rand = Math.random();
+
+                                // multiply with difference 
+                                rand = Math.floor( rand * difference);
+
+                                // add with min value 
+                                rand = rand + min;
+
+                                return rand;
+
+                                }
+                
+                            // let priceGRAB = Math.floor((Math.random() * 300) + 100);
+
+                            document.getElementById("price2").innerHTML = price2 + " PhP";
+
+                            function price1(min = 75, max = 225) {
+
+                                // find diff
+                                let difference = max - min;
+
+                                // generate random number 
+                                let rand = Math.random();
+
+                                // multiply with difference 
+                                rand = Math.floor( rand * difference);
+
+                                // add with min value 
+                                rand = rand + min;
+
+                                return rand;
+
+                                }
+
+                            document.getElementById("price3").innerHTML = price3 + " PhP";
                         
                       	</script>
                         
