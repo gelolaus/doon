@@ -20,9 +20,9 @@ function handleSubmit () {
     const driverName = document.getElementById('driverName').value;
     const serviceProvider = document.getElementById('serviceProvider').value;
     
-    sessionStorage.setItem("PLATENUMBER", plateNumber);
-    sessionStorage.setItem("DRIVERNAME", driverName);
-    sessionStorage.setItem("SERVICEPROVIDER", serviceProvider);
+    // sessionStorage.setItem("PLATENUMBER", plateNumber);
+    // sessionStorage.setItem("DRIVERNAME", driverName);
+    // sessionStorage.setItem("SERVICEPROVIDER", serviceProvider);
 
 
     return;
