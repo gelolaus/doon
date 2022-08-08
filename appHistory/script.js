@@ -9,21 +9,13 @@ window.addEventListener('load', () => {
     /* const name = localStorage.getItem('WHEREFROM');
     const surname = localStorage.getItem('WHERETO'); */
     
+    const plateNumber = sessionStorage.getItem('PLATENUMBER');
+    const driverName = sessionStorage.getItem('DRIVERNAME');
     const serviceProvider = sessionStorage.getItem('SERVICEPROVIDER');
     
+    document.getElementById('result-plateNumber').innerHTML = plateNumber;
+    document.getElementById('result-driverName').innerHTML = driverName;
     document.getElementById('result-serviceProvider').innerHTML = serviceProvider;
 
 })
 
-function handleSubmit () {
-    const plateNumber = document.getElementById('plateNumber').value;
-    const driverName = document.getElementById('driverName').value;
-    const serviceProvider = document.getElementById('serviceProvider').value;
-    
-    sessionStorage.setItem("PLATENUMBER", plateNumber);
-    sessionStorage.setItem("DRIVERNAME", driverName);
-    sessionStorage.setItem("SERVICEPROVIDER", serviceProvider);
-
-
-    return;
-}
