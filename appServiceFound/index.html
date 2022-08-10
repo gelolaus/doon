@@ -60,6 +60,8 @@
                 let plateNumber = randomItem;
 
                 document.getElementById("plateNumber").innerHTML = plateNumber;
+                sessionStorage.setItem("PLATENUMBER", plateNumber);
+  
                 
                 </script>
                 
@@ -80,7 +82,7 @@
                 let driverName = randomItem;
 
                 document.getElementById("driverName").innerHTML = driverName;
-                
+                sessionStorage.setItem("DRIVERNAME", driverName);
                 </script>
 
                     <p type="text" id="serviceProvider">Service Provider: <strong><span id="result-serviceProvider" /></strong></p>
