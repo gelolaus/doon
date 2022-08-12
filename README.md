@@ -7,5 +7,5 @@ This is a prototype web application created in partial fulfillment of our Grade 
 <strong>Lead Developer:</strong> Angelo Laus <br />
 <strong>Java Developer:</strong> Joaquin Pacete <br />
 <strong>Database Contributor:</strong> Jwaine Bravo <br />
-<strong>Database Contributor:</strong> Carl Bravo <br />
+<strong>Database Contributor:</strong> Carl Beldad <br />
 <strong>Researcher:</strong> Carl Villasotto <br />[]
