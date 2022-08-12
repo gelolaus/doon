@@ -8,4 +8,4 @@ This is a prototype web application created in partial fulfillment of our Grade 
 <strong>Java Developer:</strong> Joaquin Pacete <br />
 <strong>Database Contributor:</strong> Jwaine Bravo <br />
 <strong>Database Contributor:</strong> Carl Bravo <br />
-<strong>Researcher:</strong> Carl Villasotto <br />
+<strong>Researcher:</strong> Carl Villasotto <br />[]
